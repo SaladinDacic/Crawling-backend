@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:11
+    ports:
+      - "35432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: db
+  app:
+    restart: on-failure
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://user:pass@postgres:5432/db
+      NODE_ENV: development
+      PORT: 3001
+    ports:
+      - "3001:3001"
+    command: npm start
+    volumes:
+      - .:/app/
+      - /app/node_modules

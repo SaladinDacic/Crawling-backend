@@ -1,0 +1,6 @@
+PORT=3001
+PGPORT=35432
+PGHOST=localhost
+PGDATABASE="db"
+PGUSER="user"
+PGPASSWORD="pass"

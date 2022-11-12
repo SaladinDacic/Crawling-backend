@@ -1,0 +1,27 @@
+{
+  "name": "crawling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "cryptojs": "^2.5.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "pg": "^8.8.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^9.0.0"
+  },
+  "description": ""
+}
